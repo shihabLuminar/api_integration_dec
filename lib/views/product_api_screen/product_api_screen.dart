@@ -71,7 +71,7 @@ class ProductApiScreen extends StatelessWidget {
               //rating
 
               Text(
-                " ⭐",
+                " ⭐ ${screenState.product?.rating?.rate}",
                 style: TextStyle(
                     color: Colors.yellow,
                     fontSize: 25,
@@ -80,7 +80,7 @@ class ProductApiScreen extends StatelessWidget {
 
               InkWell(
                 onTap: () {
-                  context.read<ProductApiScreenController>().fetchProduct("4");
+                  context.read<ProductApiScreenController>().fetchProduct("5");
                 },
                 child: Container(
                   decoration: BoxDecoration(
